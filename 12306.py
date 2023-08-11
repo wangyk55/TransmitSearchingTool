@@ -73,7 +73,7 @@ def input_start_end(driver, start, end, time):
 def get_trains(driver, start, end, route):
     trs = driver.find_elements_by_tag_name('tr')
     del trs[0:7]
-    del trs[-2:]
+    del trs[-3:]
     train = tran()
     for index in tqdm(enumerate(trs),total=len(trs)):
         tr = index[1]
